@@ -43,7 +43,7 @@ function! insert_linenr#initialize_default_line_nr()
 endfunction
 function! insert_linenr#to_insert_line_nr()
   if exists("s:insert_linenr") && exists("s:insert_cursorlinenr")
-    silent exec 'highlight LineNr ' . s:highlight_dict_to_string(s:insert_linenr)
+    "silent exec 'highlight LineNr ' . s:highlight_dict_to_string(s:insert_linenr)
     silent exec 'highlight CursorLineNr ' . s:highlight_dict_to_string(s:insert_cursorlinenr)
   endif
 endfunction
